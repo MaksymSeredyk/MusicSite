@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="Image/Spotify.png" type="image/x-icon">,
+    <link rel="stylesheet" href="Main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicList</title>
+    <meta name="description" content="сторінка про хорошу музику яку можна послухати коли ідеш кудись або чимось занімаєшся">
+    <meta name="keywords" content="Музика, Ігри, Spotify">
+    <meta name="author" content="Середюк Максим">
+    
+</head>
+<body lang="uk">
+
+    <!-- Header Start -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">MusicList</div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">Theme</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#rankings">Ranking</a></li>
+                    <li><a href="#mentions">New's</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header END -->
+    <!-- Main START -->
+    <main>
+    <!-- Main-Theme Start -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h1>I would like to show you my Music List</h1>
+                <p>You can find most of them on Spotify</p>
+                <p>I really love Music from <strong>video games</strong> mostly, but there is still some music from musicians like <strong><i>Michael Jackson</i></strong></p>
+            </div>
+        </section>
+    <!-- Main-Theme END -->
+
+    <!-- Gallery Start -->
+        <section id="gallery" class="section gallery-section">
+            <div class="container">
+                <h2>Галерея</h2>
+                <div class="grid-gallery">
+                    <article class="music-card-item">
+                        <img src="Image/Michael_Jackson_-_Bad.png" alt="Michael_jackson">
+                        <p>Michael Jackson - Bad</p>
+                    </article>
+                    <article class="music-card-item">
+                        <img src="Image/Asgore.png" alt="Asgore">
+                        <span class="badge">King of the Underworld</span>
+                        <p>Asgore - Undertale</p>
+                    </article>
+                    <article class="music-card-item">
+                        <img src="Image/Spamton_neo.webp" alt="Spamton">
+                        <span class="badge">[BIG SHOT]</span>
+                        <p>Big Shot - Deltarune</p>
+                    </article>
+                    <article class="music-card-item">
+                        <img src="Image/kwik.jfif" alt="Kwik">
+                        <p>Kwik</p>
+                    </article>
+                    <article class="music-card-item">
+                        <img src="Image/swipeXswipe.jpe" alt="Kwik">
+                        <p>SwipeXSwipe</p>
+                    </article>
+                    <article class="music-card-item">
+                        <img src="Image/ITSBOT.jpe" alt="Kwik">
+                        <span class="badge">Best Game Music</span>
+                        <p>If The Sun Burns Out Tonight</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    <!-- Gallery END -->
+
+    <!-- Music Ranking Start -->
+        <section id="rankings" class="section rankings-section">
+            <div class="container ol_link">
+                <h2>Music Ranking</h2>
+                <aside class="all_good"><p>there's no worst they all good</p></aside>
+                <p>I would like to make a list from 1 - 4 from best to worst and give links so open links to know which one is best and which one is not best</p>
+                <ol class="music-rankings">
+                    <li><a href="https://open.spotify.com/track/2gSNBigeWMVtY3QBIvPAEc" target="_blank">BAD</a></li>
+                    <li><a href="https://open.spotify.com/track/3Wj2jT368D4K9HK5oZxvP4" target="_blank">Kwik</a></li>
+                    <li><a href="https://open.spotify.com/track/3ECMpqk9vl65A4cpODKA97" target="_blank">Asgore</a></li>
+                    <li><a href="https://open.spotify.com/track/75LoeZ6ZlqU1ZBeQAf9PAV" target="_blank">Big Shot</a></li>
+                </ol>
+            </div>
+        </section>
+    <!-- Music Ranking END -->
+    <!-- Contact Form Start -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>Connection with Author</h2>  
+            <form action="#" method="POST" class="feedback-form">
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="user-name">Your Name:</label>
+                    <input type="text" id="user-name" name="user_name" placeholder="Максим Середюк" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="user-email">Email:</label>
+                    <input type="email" id="user-email" name="user_email" placeholder="example@mail.com" required>
+                </div>
+
+                <!-- Feedback -->
+                <div class="form-group">
+                    <label for="feedback-topic">Theme:</label>
+                    <select id="feedback-topic" name="feedback_topic">
+                        <option value="" disabled selected>--- Choose a Variant ---</option>
+                        <option value="song_recommendation">Suggest addition</option>
+                        <option value="site_feedback">Rewiew</option>
+                        <option value="cooperation">Co-opiration / AD</option>
+                    </select>
+                </div>
+                <!-- SingleChoice -->
+                <div class="form-group">
+                    <span class="group-label">Variant of Contact:</span>
+                    <div class="radio-group">
+                        <label class="radio-label" for="contact-email">
+                            <input type="radio" id="contact-email" name="contact_method" value="email" checked>
+                            Trough Email
+                        </label>
+                        <label class="radio-label" for="contact-phone">
+                            <input type="radio" id="contact-phone" name="contact_method" value="phone">
+                            By PhoneCall
+                        </label>
+                    </div>
+                </div>
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="user-message">Your Message:</label>
+                    <textarea id="user-message" name="user_message" rows="4" placeholder="Напишіть ваші враження або рекомендуйте музику..."></textarea>
+                </div>
+
+                <!-- CheckBox -->
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">i Accept Site terms and privacy</label>
+                </div>
+
+                <!-- SendButoon -->
+                <button type="submit" class="submit-btn">Send</button>
+            </form>
+        </div>
+    </section>
+    <!-- Contact Form END -->
+    </main>
+    <!-- Main END -->
+
+    <footer>
+    <!-- H.M Start -->
+        <section id="mentions" class="section mentions-section">
+            <div class="container honorable_mentions">
+                <h2 class="mentions-title">Honorable Mention</h2>
+                <ul class="mentions-list">
+                    <li>Finale - By Toby Fox</li>
+                    <li>Rock and Stone - by Wind Rose</li>
+                    <li>Dance with Steel Ball Run - by Yugo Kanno</li>
+                    <li>Need a hand!? - by Toby Fox</li>
+                </ul>
+            </div>
+        </section>
+    <!-- H.M END -->
+    </footer>
+
+    <!-- C.B.B Start -->
+    <a href="#about" class="scroll-top-btn" title="Наверх" aria-label="Вернутися Наверх">↑</a>
+    <!-- C.B.B END -->
+
+</body>
+</html>
