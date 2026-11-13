@@ -20,6 +20,7 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 15px;
+    text-shadow: 2px 4px 4px black;
 }
 /* Footer End */
 footer {
